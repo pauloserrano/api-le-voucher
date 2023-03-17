@@ -1,12 +1,12 @@
 export default {
+  preset: "ts-jest",
   clearMocks: true,
-  collectCoverage: true,
+  //collectCoverage: true,
   coverageDirectory: "coverage",
   coverageProvider: "v8",
   moduleDirectories: ["node_modules", "src"],
-  preset: "ts-jest",
   testEnvironment: "node",
-  testMatch: ["**/*.spec.ts"],
+  testMatch:  ["<rootDir>/tests/**/*.(test|spec).ts"],
   transform: {
     ".+\\.ts$": "ts-jest",
   },
